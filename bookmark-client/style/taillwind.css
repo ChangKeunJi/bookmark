@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    .flex-center {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-hover {
+        --tw-translate-x: 12px;
+    }
+
+    .border-radius {
+        border-radius: 12px;
+    }
+
+    .button-width {
+        width:300px;
+    }
+
+    .button-height {
+        height:45px;
+    }
+
+    .cursor-pointer {
+        cursor:pointer;
+    }
+
+    .add-btn-hover {
+
+    }
+
+    .dir-item {
+        height: 50px;
+        width:100%;
+        display: flex;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        justify-content: space-between;
+        align-items: center;
+        cursor:pointer;
+    }
+
+    .dir-item:hover {
+        @apply bg-gray
+    }
+
+    .card {
+        /*height: 23rem;*/
+        height: 21rem;
+    }
+
+    .card-image {
+        height: 10rem;
+    }
+
+    .darken-img {
+        filter: brightness(50%);
+    }
+
+    input:checked ~ .dot {
+        transform: translateX(100%);
+        @apply bg-green;
+    }
+
+    .post-icon {
+        @apply w-10 h-full rounded-full hover:bg-gray-dark flex-center active:-translate-y-0.5
+    }
+
+    .post-icon-size {
+        @apply w-6 h-6;
+    }
+}
